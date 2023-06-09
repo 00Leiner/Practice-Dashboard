@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:gowork/view/TimeIn_TimeOut.dart';
 
 void main() {
-  runApp(MaterialApp(
+  runApp( const MaterialApp(
       title: 'Flutter Demo',
-      theme: ThemeData(   
-        colorScheme: ColorScheme.fromSeed(seedColor: Color.fromARGB(255, 72, 97, 2)),
-        useMaterial3: true,
-      ),),);
+      home: TimeInTimeOut(),
+      ),);
 }
