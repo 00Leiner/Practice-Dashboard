@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 
 class TimeInTimeOut extends StatefulWidget {
@@ -13,39 +15,55 @@ class _TimeInTimeOutState extends State<TimeInTimeOut> {
     return Scaffold(
       backgroundColor: Colors.blueGrey,
       body: SafeArea(
-        child: Column(
-          children: [
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Container(
-                  decoration: BoxDecoration(color: Colors.blueGrey[600],
-                  borderRadius: BorderRadius.circular(12)),
-                  padding: EdgeInsets.all(10.0),
-                  child: Icon(
-                    Icons.fullscreen_rounded,
+          child: Column(
+            children: [
+              Padding(
+                padding: const EdgeInsets.all(20.0),
+                child: Column(
+                  children: [
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Container(
+                          decoration: BoxDecoration(color: Colors.blueGrey[600],
+                          borderRadius: BorderRadius.circular(12)),
+                          padding: const EdgeInsets.all(10.0),
+                          child: Icon(
+                            Icons.fullscreen_rounded,
+                            color: Colors.white,
+                          ),
+                        ),
+                        Container(
+                          decoration: BoxDecoration(color: Colors.blueGrey[600],
+                          borderRadius: BorderRadius.circular(12)),
+                          padding:  const EdgeInsets.all(10.0),
+                          child: Icon(
+                            Icons.location_history_outlined,
+                            color: Colors.white,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+              ),
+              SizedBox(
+                height: 200,
+              ),
+              Expanded(
+                child: ClipRRect(
+                  borderRadius: const BorderRadius.only(
+                    topLeft: Radius.circular(50),
+                    topRight: Radius.circular(50),
+                  ),
+                  child: Container(
                     color: Colors.white,
                   ),
                 ),
-                Container(
-                  decoration: BoxDecoration(color: Colors.blueGrey[600],
-                  borderRadius: BorderRadius.circular(12)),
-                  padding: EdgeInsets.all(10.0),
-                  child: Icon(
-                    Icons.location_history_outlined,
-                    color: Colors.white,
-                  ),
-                ),
-              ],
-            ),
-            Container(
-              
-            )
-
-
-          ],
+              )
+            ],
+          ),
         ),
-      ),
-    );
+      );
   }
 }
