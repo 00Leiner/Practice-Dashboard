@@ -10,10 +10,41 @@ class TimeInTimeOut extends StatefulWidget {
 class _TimeInTimeOutState extends State<TimeInTimeOut> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       backgroundColor: Colors.blueGrey,
-      body: Column(
-        
+      body: SafeArea(
+        child: Column(
+          children: [
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Container(
+                  decoration: BoxDecoration(color: Colors.blueGrey[600],
+                  borderRadius: BorderRadius.circular(12)),
+                  padding: EdgeInsets.all(10.0),
+                  child: Icon(
+                    Icons.fullscreen_rounded,
+                    color: Colors.white,
+                  ),
+                ),
+                Container(
+                  decoration: BoxDecoration(color: Colors.blueGrey[600],
+                  borderRadius: BorderRadius.circular(12)),
+                  padding: EdgeInsets.all(10.0),
+                  child: Icon(
+                    Icons.location_history_outlined,
+                    color: Colors.white,
+                  ),
+                ),
+              ],
+            ),
+            Container(
+              
+            )
+
+
+          ],
+        ),
       ),
     );
   }
