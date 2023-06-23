@@ -2,6 +2,8 @@
 
 import 'package:flutter/material.dart';
 
+import '../../../others/space_between.dart';
+
 class Header extends StatelessWidget {
   final String image;
   final String name;
@@ -19,9 +21,9 @@ class Header extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        //profile
         Row(
           children: [
+            //profile
             Container(
               width: 60,
               height: 60,
@@ -33,10 +35,10 @@ class Header extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(
-              width: 10,
+            spaceBetween(
+              w: 0.02,
             ),
-            //name&Id
+            //name
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -65,11 +67,19 @@ class Header extends StatelessWidget {
                     ),
                   ],
                 ),
-                SizedBox(height: 5,),
+                spaceBetween(
+                  h: 0.005,
+                ),
                 Row(
                   children: [
-                    Icon(Icons.circle,color: Colors.green,size: 10,),
-                    SizedBox(width: 5,),
+                    Icon(
+                      Icons.circle,
+                      color: Colors.green,
+                      size: 10,
+                    ),
+                    spaceBetween(
+                      w: 0.01,
+                    ),
                     Text(
                       status,
                       style: TextStyle(

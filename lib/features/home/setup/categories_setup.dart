@@ -2,6 +2,8 @@
 
 import 'package:flutter/material.dart';
 
+import '../../../others/space_between.dart';
+
 class CategoriesSetUp extends StatefulWidget {
   final String txt;
   final icon;
@@ -50,8 +52,8 @@ class _CategoriesSetUpState extends State<CategoriesSetUp> {
                       ),
                     ),
                   ),
-                  SizedBox(
-                    width: 15,
+                  spaceBetween(
+                    w: 0.02,
                   ),
                   Text(
                     widget.txt,
