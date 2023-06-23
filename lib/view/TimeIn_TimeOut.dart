@@ -1,7 +1,9 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
+
+import '../activity/TimeIn_TimeOut_Activity.dart';
+
 
 class TimeInTimeOut extends StatefulWidget {
   const TimeInTimeOut({super.key});
@@ -103,101 +105,7 @@ class _TimeInTimeOutState extends State<TimeInTimeOut> {
                               ],
                             ),
                           ),
-                          Padding(
-                            padding: const EdgeInsets.all(15.0),
-                            child: Column(
-                              children: [
-                                Center(
-                                  child: Text(
-                                    'Activities',
-                                    style: TextStyle(
-                                      fontSize: 20,
-                                      fontWeight: FontWeight.bold,
-                                      fontFamily: 'Roboto',
-                                    ),
-                                  ),
-                                ),
-                                Padding(
-                                  padding:
-                                      const EdgeInsets.symmetric(vertical: 30.0),
-                                  child: Column(
-                                    children: [
-                                      Container(
-                                        width: 800,
-                                        height: 70,
-                                        decoration: BoxDecoration(
-                                            color: Colors.grey[350],
-                                            borderRadius:
-                                                BorderRadius.circular(15)),
-                                        child: Text('activity'),
-                                      ),
-                                      Padding(
-                                        padding: const EdgeInsets.symmetric(vertical: 10.0),
-                                        child: Container(
-                                          width: 800,
-                                          height: 70,
-                                          decoration: BoxDecoration(
-                                              color: Colors.grey[350],
-                                              borderRadius:
-                                                  BorderRadius.circular(15)),
-                                          child: Text('activity'),
-                                        ),
-                                      ),
-                                      Padding(
-                                        padding: const EdgeInsets.symmetric(vertical: 10.0),
-                                        child: Container(
-                                          width: 800,
-                                          height: 70,
-                                          decoration: BoxDecoration(
-                                              color: Colors.grey[350],
-                                              borderRadius:
-                                                  BorderRadius.circular(15)),
-                                          child: Text('activity'),
-                                        ),
-                                      ),
-                                      Padding(
-                                        padding: const EdgeInsets.symmetric(vertical: 10.0),
-                                        child: Container(
-                                          width: 800,
-                                          height: 70,
-                                          decoration: BoxDecoration(
-                                              color: Colors.grey[350],
-                                              borderRadius:
-                                                  BorderRadius.circular(15)),
-                                          child: Text('activity'),
-                                        ),
-                                      ),
-                                      Padding(
-                                        padding: const EdgeInsets.symmetric(vertical: 10.0),
-                                        child: Container(
-                                          width: 800,
-                                          height: 70,
-                                          decoration: BoxDecoration(
-                                              color: Colors.grey[350],
-                                              borderRadius:
-                                                  BorderRadius.circular(15)),
-                                          child: Text('activity'),
-                                        ),
-                                      ),
-                                      Padding(
-                                        padding: const EdgeInsets.symmetric(vertical: 10.0),
-                                        child: Container(
-                                          width: 800,
-                                          height: 70,
-                                          decoration: BoxDecoration(
-                                              color: Colors.grey[350],
-                                              borderRadius:
-                                                  BorderRadius.circular(15)),
-                                          child: Text('activity'),
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                ),
-                                
-                              ],
-                            ),
-                          )
+                          Actvities()
                         ],
                       ),
                     ),
@@ -210,4 +118,7 @@ class _TimeInTimeOutState extends State<TimeInTimeOut> {
       ),
     );
   }
+}
+
+class Activities {
 }
