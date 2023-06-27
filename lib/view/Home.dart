@@ -36,7 +36,7 @@ class _HomeState extends State<Home> {
                 h: 0.02,
               ),
               Text(
-                'Dashboard',
+                'Home',
                 style: TextStyle(fontSize: 35, fontWeight: FontWeight.bold),
               ),
               spaceBetween(

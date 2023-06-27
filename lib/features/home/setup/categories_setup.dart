@@ -30,7 +30,7 @@ class _CategoriesSetUpState extends State<CategoriesSetUp> {
         width: double.infinity,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(20),
-          color: Colors.grey[200],
+          color: Colors.grey[300],
         ),
         child: Padding(
           padding: EdgeInsets.all(10.0),
